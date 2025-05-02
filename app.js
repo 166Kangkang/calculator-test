@@ -22,7 +22,7 @@ function calculateResult() {
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("/service-worker.js")
+    .register("service-worker.js")
     .then(function (registration) {
       console.log("Service Worker 注册成功:", registration);
     })

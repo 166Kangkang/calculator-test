@@ -2,13 +2,12 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open("calculator-cache").then((cache) => {
       return cache.addAll([
-        "/",
-        "/index.html",
-        "/style.css",
-        "/app.js",
-        "/manifest.json",
-        "/images/icon-192x192.png",
-        "/images/icon-512x512.png",
+        "index.html",
+        "style.css",
+        "app.js",
+        "manifest.json",
+        "images/icon-192x192.png",
+        "images/icon-512x512.png",
       ]);
     })
   );
